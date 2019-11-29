@@ -1,0 +1,122 @@
+::-webkit-scrollbar { width: 6px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: transparent; height: 0;}
+::-webkit-scrollbar-track {  background-color: transparent;}
+::-webkit-scrollbar-track-piece { background-color: transparent;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-thumb:hover {background-color: #999;}
+::-webkit-scrollbar-corner { background-color: #999;}}
+::-webkit-resizer { background-color: #666;}
+body {
+	margin: 0 auto;
+	font-family: Bebas Neue, Helvetica, Arial, sans-serif;
+}
+a {
+	color: inherit;
+}
+a:hover {
+	color: inherit;
+    text-decoration: none;
+}
+a.bg-light.product-wrapper:hover {
+	background-color: #f8f9fa!important;
+}
+ul{
+	list-style: none;
+}
+ul li::before {
+	position: relative;
+	top: 6px;
+	width: 25px;
+	margin-left: -29px;
+	font-size: 43px;
+	line-height: 0;
+	content: "\2022";
+	color: #eb5c3e;
+	font-weight: bold;
+	display: inline-block;
+}
+.color-unique {
+	color: #eb5c3e;
+}
+.bg-black {
+	background-color: #111;
+}
+.color-secondary{
+	color: #636363;
+}
+.bt {
+	border-top: 1px solid #e5e5e5;
+}
+.global-container {
+	margin: 0 auto;
+	max-width: 1500px;
+}
+.header .navbar {
+	min-height: 48px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.info-wrap {
+	padding-left: 8px;
+	padding-right: 8px;
+	flex-direction: column;
+	max-height: 1300px;
+}
+.info-block {
+	cursor: pointer;
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+}
+.info-block h2 {
+	color: #fff;
+}
+.man {
+	order: 1;
+	background-image: url(https://img2.goodfon.ru/wallpaper/nbig/a/4e/pose-workout-hard-work-fitness-fitness-model-gym.jpg);
+}
+.women {
+	order: 3;
+	background-image: url(https://c.static-nike.com/a/images/f_auto/w_1920,c_limit/ljfc2jvcyiy0sb5n0iap/nikecom-homepage-emea-4.jpg);
+}
+.info {
+	order: 2;
+	background-image: url(https://f.mixsport.pro/article/433/AQ66p.png);
+}
+.women, .info {
+	height: 400px;
+}
+.contacts {
+	order: 4;
+	background-image: url(https://99px.ru/sstorage/53/2016/07/tmb_173175_7238.jpg);
+}
+.info-block-inside {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.carousel-inner, .reviews {
+	height: 500px;
+}
+.carousel-inner img{
+	width: 100%;
+	margin: 0 auto;
+}
+.resident {
+	font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.resident-logo img{
+	width: 64px;
+	height: 64px;
+}
+.carousel-item img {
+
+}
+@media (min-width: 1024px) {
+
+}
