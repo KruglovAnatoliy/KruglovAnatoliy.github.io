@@ -22,8 +22,10 @@
 ::-webkit-scrollbar-corner { background-color: #999;}}
 ::-webkit-resizer { background-color: #666;}
 body {
-	margin: 0 auto;
 	font-family: "Bebas Neue", Helvetica, Arial, sans-serif;
+}
+body, .center {
+	margin: 0 auto;
 }
 a {
 	color: inherit;
@@ -63,7 +65,6 @@ ul li::before {
 	border-top: 1px solid #e5e5e5;
 }
 .global-container {
-	margin: 0 auto;
 	max-width: 1500px;
 }
 .header .navbar {
@@ -74,20 +75,16 @@ ul li::before {
 .info-wrap {
 	padding-left: 8px;
 	padding-right: 8px;
-	flex-direction: column;
 	max-height: 1300px;
 }
 .info-block {
 	cursor: pointer;
 	border: 1px solid transparent;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 700px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-clip: content-box;
+	min-height: 150px;
 }
 .info-block h2 {
 	color: #fff;
@@ -104,24 +101,15 @@ ul li::before {
 	order: 2;
 	background-image: url(https://f.mixsport.pro/article/433/AQ66p.png);
 }
-.women, .info {
-	height: 400px;
-}
 .contacts {
 	order: 4;
 	background-image: url(https://99px.ru/sstorage/53/2016/07/tmb_173175_7238.jpg);
-}
-.info-block-inside {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 .carousel-inner, .reviews {
 	height: 500px;
 }
 .carousel-inner img{
 	width: 100%;
-	margin: 0 auto;
 }
 .resident {
 	font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -133,6 +121,179 @@ ul li::before {
 .carousel-item img {
 
 }
-@media (min-width: 1024px) {
 
+/* products */
+.products-wrap {
+	position: relative;
+	z-index: 1;
+}
+.product-wrapper {
+	max-height: 310px;
+	width: 50%;
+}
+.product {
+	padding: 0;
+	border: 1px solid transparent;
+	background-clip: content-box;
+}
+.product:hover {
+	cursor: pointer;
+	padding-bottom: 0;
+}
+.product:hover .product-info-wrap {
+	display: block;
+	height: auto;
+	transform: scale(1);
+	padding-bottom: 9px;
+}
+.product:hover .product-head {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+}
+.product:hover .product-details-wrap{
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+.product-head {
+	height: 250px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 1px solid transparent;
+}
+.product-photo {
+	height: 200px;
+}
+.product-photo img {
+	max-width: 100%;
+}
+.product-text {
+	margin-top: 10px;
+	font-size: 13px;
+	color: #3a3a3a;
+}
+.product-details-wrap {
+	height: 59px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+.product-price {
+	line-height: 26px;
+}
+.button {
+	padding: 8px 6px;
+	background-color: #3a3a3a;
+	color: #ffffff;
+}
+.button:hover {
+	background-color: #eb5c3e;
+}
+.product-info-wrap {
+	border: 1px solid #000;
+	background-color: #fff;
+	font-size: 11px;
+	line-height: 14px;
+	height: 0;
+}
+@media only screen and (max-width: 320px) {
+	.product-info-wrap {
+		height: auto;
+	}
+}
+@media only screen and (max-width: 475px) {
+	.wrapper {
+		max-width: 100%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+	.product-info-wrap {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.products-wrap {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.product {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	.product .product-head {
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		border-top: 1px solid #000;
+	}
+	.product .product-details-wrap {
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+	}
+	.product-wrapper {
+		max-height: 100%;
+	}
+	.product-info-wrap {
+		height: auto;
+		display: block;
+		flex: 1 0 auto;
+	}
+}
+@media (max-width: 575px) {
+	.product-wrapper {
+		width: 100%;
+		max-height: 100%;
+	}
+}
+/* */
+@media (min-width: 768px) {
+	.info-block {
+		min-height: 700px;
+	}
+	.women, .info {
+		min-height: 400px;
+	}
+	/*
+	.losing-weight-express img{
+		margin-top: -30px;
+	}
+	.mass-gain-express img {
+		margin-top: -45px;
+	}
+	.diet-express img {
+		margin-top: -30px;
+	}
+	.diet-train img {
+		margin-top: -6px;
+	}
+	.premium img {
+		margin-top: -6px;
+	} */
+}
+@media only screen and (max-width: 767px) {
+	.info-wrap, .carousel, .reviews {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.default-container {
+		padding-left: 0.5rem !important;
+		padding-right: 0.5rem !important;
+	}
+	.resident-logo img{
+		width: 32px;
+		height: 32px;
+	}
+}
+@media (max-width: 320px) {
+	.product .product-head {
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		border-top: 1px solid #000;
+	}
+	.product .product-details-wrap {
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+	}
 }
