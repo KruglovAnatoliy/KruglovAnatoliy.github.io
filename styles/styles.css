@@ -164,7 +164,7 @@ ul li::before {
 	line-height: 26px;
 }
 .product-price small{
-	font-family: Arial, sans-serif;
+	font-family: PT Sans, PT Serif,Arial, sans-serif;
 }
 .button {
 	padding: 8px 6px;
@@ -301,7 +301,10 @@ ul li::before {
 	.send {
 		height: 100px;
 	}
-	.carousel-inner, .reviews {
+	.carousel-inner {
+		height: 250px;
+	}
+	.reviews {
 		height: auto;
 	}
 }
