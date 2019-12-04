@@ -164,7 +164,7 @@ ul li::before {
 	line-height: 26px;
 }
 .product-price small{
-	font-family: PT Sans, PT Serif,Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 .button {
 	padding: 8px 6px;
