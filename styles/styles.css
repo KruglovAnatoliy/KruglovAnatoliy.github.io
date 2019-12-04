@@ -13,6 +13,10 @@
 	font-family: "Segoe UI";
 	src: url(../fonts/segoeui.ttf) format("truetype");
 }
+@font-face {
+	font-family: "rouble";
+	src: url(../fonts/rouble.ttf) format("truetype");
+}
 ::-webkit-scrollbar { width: 6px; height: 3px;}
 ::-webkit-scrollbar-button {  background-color: transparent; height: 0;}
 ::-webkit-scrollbar-track {  background-color: transparent;}
@@ -51,6 +55,9 @@ ul li::before {
 	color: #eb5c3e;
 	font-weight: bold;
 	display: inline-block;
+}
+.rouble {
+  font-family: 'rouble';
 }
 .color-unique {
 	color: #eb5c3e;
@@ -162,9 +169,6 @@ ul li::before {
 }
 .product-price {
 	line-height: 26px;
-}
-.product-price small{
-	font-family: Arial, sans-serif;
 }
 .button {
 	padding: 8px 6px;
