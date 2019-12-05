@@ -96,21 +96,22 @@ ul li::before {
 .info-block h2 {
 	color: #fff;
 }
-.man {
+.get-fit {
 	order: 1;
-	background-image: url(https://img2.goodfon.ru/wallpaper/nbig/a/4e/pose-workout-hard-work-fitness-fitness-model-gym.jpg);
+	background-position: top;
+	background-image: url(../img/get_fit.webp);
 }
-.women {
+.food {
 	order: 3;
-	background-image: url(https://c.static-nike.com/a/images/f_auto/w_1920,c_limit/ljfc2jvcyiy0sb5n0iap/nikecom-homepage-emea-4.jpg);
+	background-image: url(../img/food.webp);
 }
-.info {
+.trainer {
 	order: 2;
-	background-image: url(https://f.mixsport.pro/article/433/AQ66p.png);
+	background-image: url(../img/trainer.webp);
 }
-.contacts {
+.muscles {
 	order: 4;
-	background-image: url(https://99px.ru/sstorage/53/2016/07/tmb_173175_7238.jpg);
+	background-image: url(../img/muscles.webp);
 }
 /* products */
 .products-wrap {
@@ -252,7 +253,7 @@ ul li::before {
 	height: 64px;
 }
 .send {
-	background-image: url(../img/envelope.png);
+	background-image: url(../img/envelope.webp);
 	height: 250px;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -267,7 +268,7 @@ ul li::before {
 	.info-block {
 		min-height: 700px;
 	}
-	.women, .info {
+	.food, .trainer {
 		min-height: 400px;
 	}
 	/*
