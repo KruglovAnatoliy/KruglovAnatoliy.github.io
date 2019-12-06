@@ -239,6 +239,11 @@ ul li::before {
 	}
 }
 /* */
+.trainer-online {
+	background-image: url(../img/trainer_online.webp);
+	height: 690px;
+	background-size: cover;
+}
 .carousel-inner, .reviews {
 	height: 500px;
 }
