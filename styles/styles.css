@@ -160,6 +160,7 @@ ul li::before {
 }
 .product-photo img {
 	max-width: 100%;
+	width: 100%;
 }
 .product-text {
 	margin-top: 10px;
@@ -218,9 +219,13 @@ ul li::before {
 		height: 100%;
 	}
 	.product .product-head {
+		height: 160px;
 		border-left: 1px solid #000;
 		border-right: 1px solid #000;
 		border-top: 1px solid #000;
+	}
+	.product-photo {
+		height: 118px;
 	}
 	.product .product-details-wrap {
 		border-left: 1px solid #000;
@@ -279,22 +284,6 @@ ul li::before {
 	.food, .trainer {
 		min-height: 400px;
 	}
-	/*
-	.losing-weight-express img{
-		margin-top: -30px;
-	}
-	.mass-gain-express img {
-		margin-top: -45px;
-	}
-	.diet-express img {
-		margin-top: -30px;
-	}
-	.diet-train img {
-		margin-top: -6px;
-	}
-	.premium img {
-		margin-top: -6px;
-	} */
 }
 @media only screen and (max-width: 767px) {
 	.info-wrap, .carousel, .reviews {
