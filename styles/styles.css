@@ -4,18 +4,22 @@
 	src: url('../fonts/BebasNeue Regular.woff') format('woff'), url('../fonts/BebasNeue Regular.ttf') format('truetype'), url('../fonts/BebasNeue Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: "BebasNeueBold";
 	src: url(../fonts/BebasNeue Bold.ttf) format("truetype");
+	font-display: swap;
 }
 @font-face {
 	font-family: "Segoe UI";
 	src: url(../fonts/segoeui.ttf) format("truetype");
+	font-display: swap;
 }
 @font-face {
 	font-family: "rouble";
 	src: url(../fonts/rouble.ttf) format("truetype");
+	font-display: swap;
 }
 ::-webkit-scrollbar { width: 6px; height: 3px;}
 ::-webkit-scrollbar-button {  background-color: transparent; height: 0;}
@@ -299,16 +303,19 @@ ul li::before {
 		width: 32px;
 		height: 32px;
 	}
+	.carousel-item img{
+		width: 100%;
+	}
+	.reviews {
+		height: auto;
+	}
 }
 @media (max-width: 575px) {
 	.send {
 		height: 100px;
 	}
 	.carousel-inner {
-		height: 250px;
-	}
-	.reviews {
-		height: auto;
+		height: 350px;
 	}
 }
 @media (max-width: 320px) {
