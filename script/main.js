@@ -139,7 +139,7 @@ $(document).ready(function () {
 			var paramReplace = param.replace('.webp', '.jpg');
 			$('' + pictures[i] + '').css('background-image', paramReplace);
 		}
-		var images = ['.losing-weight-express', '.mass-gain-express', '.get-strength', '.diet-express', '.diet-train', '.premium'];
+		var images = ['.losing-weight-express', '.mass-gain-express', '.get-strength', '.diet-express', '.diet-train', '.premium', '.js-resident1P', '.js-resident2P', '.js-resident3P', '.js-resident4P', '.js-resident1', '.js-resident2', '.js-resident3'];
 		for (var i = 0; i < images.length; i++) {
 			var param = $('' + images[i] + ' img').attr("src");
 			var paramReplace = param.replace('.webp', '.jpg');

@@ -158,8 +158,6 @@ ul li::before {
 .product-photo {
 	height: 200px;
 }
-.product-photo img {
-}
 .product-text {
 	margin-top: 10px;
 	font-size: 13px;
@@ -258,8 +256,8 @@ ul li::before {
 .carousel-inner, .reviews {
 	height: 500px;
 }
-.carousel-inner img{
-	width: 100%;
+.carousel-item.active {
+	display: flex;
 }
 .resident {
 	font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
