@@ -132,6 +132,7 @@ var isMobile = {
 $(document).ready(function () {
 	if (BrowserDetect.browser === 'Chrome') {
 	}
+	/*
 	if (BrowserDetect.browser === 'Safari') {
 		var pictures = ['.get-fit', '.food', '.trainer', '.muscles', '.trainer-online'];
 		for (var i = 0; i < pictures.length; i++) {
@@ -151,5 +152,6 @@ $(document).ready(function () {
 			var paramReplace = param.replace('.webp', '.png');
 			$('' + pngs[i] + '').css('background-image', paramReplace);
 		}
+	*/
 	}
 });
